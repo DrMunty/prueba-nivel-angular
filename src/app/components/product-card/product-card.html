@@ -1,10 +1,15 @@
+<div class = "gallery">
 <ul>
+    <div class="gallery-item">
     @for (product of productList.myProductList(); track product.id){
         <a [routerLink]="['/details', product.id]"> {{product.title}}</a>
         <a> {{product.price}}</a>
         <a> {{product.description}}</a>
         <img [src]="product.image">
-        <a> {{product.category}}</a>
+        <a class="desc"> {{product.category}}</a>
     }
+    </div>
 </ul>
+
+</div>
 
