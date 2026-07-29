@@ -1,6 +1,7 @@
-# AngularProductCatalog
+# AngularProductCatalog by Albert Muntal
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 22.0.5.
+This project is a product gallery that contains 10 products. If the user clicks on a product card the page takes him to another page with the full product details.
 
 ## Development server
 
