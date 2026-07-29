@@ -4,9 +4,8 @@
     @for (product of productList.myProductList(); track product.id){
         <a [routerLink]="['/details', product.id]"> {{product.title}}</a>
         <a> {{product.price}}</a>
-        <a> {{product.description}}</a>
         <img [src]="product.image">
-        <a class="desc"> {{product.category}}</a>
+        
     }
     </div>
 </ul>
