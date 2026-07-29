@@ -1,6 +1,6 @@
 <ul>
     @for (product of productList.myProductList(); track product.id){
-        <a [routerLink]="['']"> {{product.title}}</a>
+        <a [routerLink]="['/details', product.id]"> {{product.title}}</a>
         <a> {{product.price}}</a>
         <a> {{product.description}}</a>
         <img [src]="product.image">

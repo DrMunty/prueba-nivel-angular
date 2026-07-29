@@ -1,1 +1,19 @@
-<p>product-detail works!</p>
+<h1> Here you can see your product in detail: </h1>
+
+<div>
+
+@if (product(); as p) {
+ 
+    <h1> {{ p.title }} </h1>
+    <h2> {{ p.price }} </h2>
+    <p> {{ p.description }} </p>
+    <img [src]="p.image">
+    <p> {{ p.category }} </p>
+    
+ }
+
+
+@else {
+    <p> Product not found </p>
+}
+</div>

@@ -5,7 +5,7 @@ import { ProductCard } from '../product-card/product-card';
 
 @Component({
   selector: 'app-product-list',
-  imports: [RouterLink, ProductCard],
+  imports: [RouterLink],
   templateUrl: './product-list.html',
   styleUrl: './product-list.css',
   changeDetection: ChangeDetectionStrategy.OnPush

@@ -1,4 +1,6 @@
-import { Component, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy, input, computed, inject } from '@angular/core';
+import { ProductService } from '../../services/product-service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-detail',
@@ -7,4 +9,15 @@ import { Component, ChangeDetectionStrategy } from '@angular/core';
   styleUrl: './product-detail.css',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ProductDetail {}
+export class ProductDetail {
+  router = inject(Router)
+  productId = input.required<string>();
+  productService = inject(ProductService)
+  product = computed(()=> {
+    return this.productService.myProductList().find(p => p.id === this.productId());
+  })
+
+  returnToList(){
+    this.router.navigate(['/details']);
+  }
+}
