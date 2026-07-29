@@ -2,9 +2,9 @@
 <ul>
     <div class="gallery-item">
     @for (product of productList.myProductList(); track product.id){
-        <a [routerLink]="['/details', product.id]"> {{product.title}}</a>
-        <a> {{product.price}}</a>
-        <img [src]="product.image">
+        <a class ="product-title" [routerLink]="['/details', product.id]"> {{product.title}}</a>
+        <a class="product-price"> {{product.price}}$</a>
+        <img class ="product-image"[src]="product.image">
         
     }
     </div>

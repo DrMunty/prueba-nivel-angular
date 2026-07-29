@@ -36,3 +36,13 @@
   padding: 15px;
   text-align: center;
 }
+
+.product-title{
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+  padding-right: 100px;
+}
+
+.product-price{
+  font-family: 'Courier New', Courier, monospace;
+}
