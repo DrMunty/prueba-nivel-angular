@@ -4,7 +4,7 @@ import type { ProductListInterface } from '../models/product-list-interface';
 
 @Service()
 export class ProductService {
-    productList = signal<ProductListInterface[]>(
+    myProductList = signal<ProductListInterface[]>(
         [
             {
                 id: '1',
