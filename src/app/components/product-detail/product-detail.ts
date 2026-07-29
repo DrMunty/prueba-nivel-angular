@@ -17,7 +17,7 @@ export class ProductDetail {
     return this.productService.myProductList().find(p => p.id === this.productId());
   })
 
-  returnToList(){
-    this.router.navigate(['/details']);
+  returnToProductList(){
+    this.router.navigate(['']);
   }
 }

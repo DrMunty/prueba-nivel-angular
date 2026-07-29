@@ -9,11 +9,14 @@
     <p> Description: {{ p.description }} </p>
     <img [src]="p.image" alt="This is an image">
     <p> Category: {{ p.category }} </p>
+    <button class="btn1" (click)="returnToProductList()"> Return to product list </button>
+
     
  }
 
 
 @else {
     <p> Product not found </p>
+    <button class="btn1" (click)="returnToProductList()"> </button>
 }
 </div>
